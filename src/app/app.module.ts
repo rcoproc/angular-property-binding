@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { AlertModule } from 'ng2-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -12,6 +14,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     DataBindingComponent
   ],
   imports: [
+    AlertModule.forRoot(),
     BrowserModule,
     FormsModule,
     HttpModule
