@@ -67,20 +67,20 @@
 
 </section>-->
 
-<section class="two-way-binging">
+<!--<section class="two-way-binging">
     <article>
         <h3></h3>Two-way data binding
 
         <div>
             <input type="text" [value]="nome" (input)="nome = $event.target.value">
-            <!-- Associação de propriedade e associação de Evento-->
+            Associação de propriedade e associação de Evento
 
             <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event">
 
-            <!--use a lembrança de "Banana in a box [()]"-->
+            use a lembrança de "Banana in a box [()]"
             <input type="text" [(ngModel)]="nome">
 
-            <!--Mesma coisa que o anterior( o Angular traduz assim)-->
+            Mesma coisa que o anterior( o Angular traduz assim)
             <input type="text" bindon-ngModel="nome">
 
             <p>Você digitou: {{nome}}</p>
@@ -93,6 +93,16 @@
 
             <p>Meu nome é {{pessoa.nome}} e tenho {{pessoa.idade}} de idade</p>
         </div>
+    </article>
+
+</section>-->
+
+<section class="input-ouput-properties">
+
+    <article>
+        <h3>Input/Output Properties</h3>
+
+        <app-curso [nome]="nomeDoCurso"> </app-curso>
     </article>
 
 </section>

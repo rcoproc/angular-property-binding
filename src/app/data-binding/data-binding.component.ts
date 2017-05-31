@@ -16,6 +16,8 @@ export class DataBindingComponent implements OnInit {
 
   nome: string = 'Abc';
 
+  nomeDoCurso: string = 'Angular';
+
   pessoa: any = {
     nome: 'RCO', 
     idade: 20
