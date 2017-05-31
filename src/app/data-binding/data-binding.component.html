@@ -43,7 +43,7 @@
     </article>
 </section>-->
 
-<section class="event-bindign">
+<!--<section class="event-binding">
 
     <article>
         <h3>Event Binding</h3>
@@ -62,6 +62,36 @@
             <br>
             <span (mouseover)="onMouserOverOut()" (mouseout)="onMouserOverOut()" [class.highlight]="isMouseOver">
                 Passe o mouse sobre mim</span>
+        </div>
+    </article>
+
+</section>-->
+
+<section class="two-way-binging">
+    <article>
+        <h3></h3>Two-way data binding
+
+        <div>
+            <input type="text" [value]="nome" (input)="nome = $event.target.value">
+            <!-- Associação de propriedade e associação de Evento-->
+
+            <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event">
+
+            <!--use a lembrança de "Banana in a box [()]"-->
+            <input type="text" [(ngModel)]="nome">
+
+            <!--Mesma coisa que o anterior( o Angular traduz assim)-->
+            <input type="text" bindon-ngModel="nome">
+
+            <p>Você digitou: {{nome}}</p>
+
+        </div>
+
+        <div>
+            <input type="text" [(ngModel)]="pessoa.nome">
+            <input type="text" [(ngModel)]="pessoa.idade">
+
+            <p>Meu nome é {{pessoa.nome}} e tenho {{pessoa.idade}} de idade</p>
         </div>
     </article>
 
