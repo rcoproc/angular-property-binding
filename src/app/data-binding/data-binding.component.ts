@@ -33,6 +33,10 @@ export class DataBindingComponent implements OnInit {
     return this.cursoAngular;
   }
 
+  onMudouValor(evento){
+    console.log(evento.novoValor);
+  }
+
   constructor() { }
 
   ngOnInit() {
